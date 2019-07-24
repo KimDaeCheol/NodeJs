@@ -1,4 +1,4 @@
-# Do It Node.js 프로그래밍 실습 commit
+# Do It Node.js 프로그래밍 실습
 
   Chapter 1. 노드에 대해 알아보고 개발 도구 설치하기
 
