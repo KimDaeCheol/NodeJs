@@ -1,0 +1,4 @@
+// exports에 인스턴스 객체를 만들어 할당
+var user = require('./user9').user;
+
+user.printUser();
