@@ -9,8 +9,8 @@ module.exports = {
 	route_info: [
 	],
 	facebook: {
-		clientID: '640122946752038',
-		clientSecret: '5485280b890ee48bed0b6085090c00e3',
+		clientID: '00000000000000000',
+		clientSecret: '0000000000000000000000000',
 		callbackURL: '/auth/facebook/callback'
 	}
 };
