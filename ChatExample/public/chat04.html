@@ -109,7 +109,7 @@
 				socket = io.connect(url, options);
 
 				socket.on('connect', function() {
-					println('웹 소켓 소버에 연결되었습니다: ' + url);
+					println('웹 소켓 서버에 연결되었습니다: ' + url);
 
 					socket.on('message', function(message) {
 						console.log(JSON.stringify(message));
