@@ -11,11 +11,13 @@ module.exports = {
 	route_info: [
 		{file: './coffeeshop', path: '/process/addcoffeeshop', method: 'add', type: 'post'},
 		{file: './coffeeshop', path: '/process/listcoffeeshop', method: 'list', type: 'post'},
-		{file: './coffeeshop', path: '/process/nearcoffeeshop', method: 'findNear', type: 'post'}
+		{file: './coffeeshop', path: '/process/nearcoffeeshop', method: 'findNear', type: 'post'},
+		{file: './coffeeshop', path: '/process/withincoffeeshop', method: 'findWithin', type: 'post'},
+		{file: './coffeeshop', path: '/process/circlecoffeeshop', method: 'findCircle', type: 'post'}
 	],
 	facebook: {
-		clientID: '640122946752038',
-		clientSecret: '5485280b890ee48bed0b6085090c00e3',
+		clientID: '0000000000000000000',
+		clientSecret: '0000000000000000000000000',
 		callbackURL: '/auth/facebook/callback'
 	}
 };
