@@ -7,10 +7,5 @@ module.exports = {
 		 modelName: 'UserModel'}
 	],
 	route_info: [
-	],
-	facebook: {
-		clientID: '640122946752038',
-		clientSecret: '5485280b890ee48bed0b6085090c00e3',
-		callbackURL: '/auth/facebook/callback'
-	}
+	]
 };
