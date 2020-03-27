@@ -16,5 +16,5 @@ module.exports = {
 		{file: './coffeeshop', path: '/process/withincoffeeshop', method: 'findWithin', type: 'post'},
 		{file: './coffeeshop', path: '/process/withincoffeeshop2', method: 'findWithin2', type: 'post'},
 		{file: './coffeeshop', path: '/process/circlecoffeeshop', method: 'findCircle', type: 'post'}
-	]
+	],
 };
