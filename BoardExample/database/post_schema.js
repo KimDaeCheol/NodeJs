@@ -7,13 +7,13 @@ SchemaObj.createSchema = function(moongoose) {
 	var PostSchema = moongoose.Schema({
 		title: {type: String, trim: true, 'default': ''},			// 제목
 		contents: {type: String, trim: true, 'default': ''},		// 내용
-		writer: {type: moongoose.Schema.ObjectId, ref: 'users'},	// 작성자
+		writer: {type: moongoose.Schema.ObjectId, ref: 'users6'},	// 작성자
 		tags: {type: [], 'default': ''},
 		created_at: {type: Date, index: {unique: false}, 'default': Date.now},
 		updated_at: {type: Date, index: {unique: false}, 'default': Date.now},
 		comments: [{
 			contents: {type: String, trim: true, 'default': ''},	// 댓글 내용
-			writer: {type: moongoose.Schema.ObjectId, ref: 'users'},
+			writer: {type: moongoose.Schema.ObjectId, ref: 'users6'},
 			created_at: {type: Date, 'default': Date.now}
 		}]
 	});
@@ -67,7 +67,7 @@ SchemaObj.createSchema = function(moongoose) {
 				.exec(callback);
 		},
 		list: function(options, callback) {
-			var criteria: options.criteria || {};
+			var criteria =  options.criteria || {};
 
 			this.find(criteria)
 				.populate('writer', 'name provider email')

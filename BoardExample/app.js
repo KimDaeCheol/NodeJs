@@ -22,7 +22,7 @@ var MongoClient = require('mongodb').MongoClient;
 var mongoose = require('mongoose');
 
 // 설정 관련 모듈 불러오기
-var config = require('./config');
+var config = require('./config/config');
 var database_loader = require('./database/database');
 var route_loader = require('./routes/route_loader');
 
@@ -74,6 +74,10 @@ app.use(expressSession({
 app.use(passport.initialize());
 app.use(passport.session());
 app.use(flash());
+
+// 라우터 사용 설정
+var router = express.Router();
+route_loader.init(app, router);
 
 var configPassport = require('./config/passport');
 configPassport(app, passport);
